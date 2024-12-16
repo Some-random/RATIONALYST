@@ -31,7 +31,7 @@ python filter_rationale.py
 
 The rationale extraction process requires a vllm server to be running elsewhere. Please update the URL in the script to connect to the correct vllm server. The prompts for extracting rationales are already included in the script.
 
-Rationales extracted from GSM8K can be found [here](https://huggingface.co/datasets/Dongwei/reasoning_world_model)
+Rationales extracted from GSM8K can be found here
 
 ### Step 3: 𝐑𝐀𝐓𝐈𝐎𝐍𝐀𝐋𝐘𝐒𝐓 model training
 The goal of 𝐑𝐀𝐓𝐈𝐎𝐍𝐀𝐋𝐘𝐒𝐓 training is to develop a model that can generate implicit rationales to guide stepwise problem-solving during inference time. We choose to fine-tune a LLaMa-3-8B model on extracted rationales from step 2.
@@ -43,7 +43,7 @@ sbatch sbatch_llama_finetune.sh
 
 This training script is adapted from [stanford-alpaca](https://github.com/tatsu-lab/stanford_alpaca)
 
-Trained RATIONALYST can be found [here](https://huggingface.co/Dongwei/Rationalyst_reasoning_datasets)
+Trained RATIONALYST can be found here
 
 ### Step 4: Model inference
 How does 𝐑𝐀𝐓𝐈𝐎𝐍𝐀𝐋𝐘𝐒𝐓 work during inference time? 
